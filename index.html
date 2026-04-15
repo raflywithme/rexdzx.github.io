@@ -1,43 +1,283 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <title>Muhammad Rafli</title>
-    <meta name="description" content="Muhammad Rafli. Backend Developer. Pelajar TRPL di POLITEKNIK NEGERI MEDAN. Portofolio, profil, dan tautan sosial." />
-    <meta name="keywords" content="Muhammad Rafli, Backend Developer, RPL, portfolio" />
-    <meta property="og:title" content="Muhammad Rafli — Backend Developer" />
-    <meta property="og:description" content="Muhammad Rafli — Backend Developer. Pelajar TRPL di POLITEKNIK NEGERI MEDAN. Portofolio, profil, dan tautan sosial." />
-    <meta property="og:image" content="https://raflywithme.my.id/images/avatar.png" />
-    <meta property="twitter:title" content="Muhammad Rafli — Backend Developer" />
-    <meta property="twitter:description" content="Muhammad Rafli — Backend Developer. Pelajar RPL di POLITEKNIK NEGERI MEDAN. Portofolio, profil, dan tautan sosial." />
-    <meta property="twitter:image" content="https://raflywithme.my.id/images/avatar.png" />
-    <meta property="twitter:domain" content="raflywithme.my.id" />
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Muhammad Rafli",
-      "url": "https://raflywithme.my.id/",
-      "image": "https://raflywithme.my.id/images/avatar.png"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Muhammad Rafli",
-      "jobTitle": "Backend Developer",
-      "url": "https://raflywithme.my.id/",
-      "image": "https://raflywithme.my.id/images/avatar.png",
-      "sameAs": [
-        "https://www.facebook.com/rexdzx",
-        "https://www.linkedin.com/in/rexdzx",
-        "https://github.com/raflywithme"
-      ]
-    }
-    </script>
+   <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Muhammad Rafli</title>
+  <meta name="description" content="Muhammad Rafli - Backend Developer & Software Engineering Student at Medan State Polytechnic.">
+  <meta name="keywords" content="Muhammad Rafli, Backend Developer, TRPL, POLMED, Portfolio">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://raflywithme.my.id/" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://raflywithme.my.id/">
+  <meta property="og:title" content="Muhammad Rafli — Backend Developer">
+  <meta property="og:description" content="Muhammad Rafli - Backend Developer & Software Engineering Student at Medan State Polytechnic.">
+  <meta property="og:image" content="https://raflywithme.my.id/images/avatar.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Muhammad Rafli — Backend Developer">
+  <meta name="twitter:description" content="Muhammad Rafli - Backend Developer & Software Engineering Student at Medan State Polytechnic.">
+  <meta name="twitter:image" content="https://raflywithme.my.id/images/avatar.png">
+  <meta name="twitter:url" content="https://raflywithme.my.id/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://raflywithme.my.id/#website",
+        "url": "https://raflywithme.my.id/",
+        "name": "Muhammad Rafli",
+        "inLanguage": "id-ID"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://raflywithme.my.id/#person",
+        "name": "Muhammad Rafli",
+        "jobTitle": "Backend Developer",
+        "url": "https://raflywithme.my.id/",
+        "image": "https://raflywithme.my.id/images/avatar.png",
+        "sameAs": [
+          "https://github.com/raflywithme",
+          "https://www.linkedin.com/in/rexdzx",
+          "https://www.facebook.com/rexdzx"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --accent-color: #FF4D4D;
+            --secondary-text: #666;
+            --nav-bg: rgba(255, 255, 255, 0.8);
+            --card-bg: #f9f9f9;
+            --transition: all 0.3s ease;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #0f172a;
+            --text-color: #f1f5f9;
+            --secondary-text: #94a3b8;
+            --nav-bg: rgba(15, 23, 42, 0.9);
+            --card-bg: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            transition: var(--transition);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: var(--nav-bg);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .nav-brand {
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+
+        .avatar-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 5px;
+            border: 2px dashed var(--accent-color);
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .hero h3 {
+            font-weight: 400;
+            color: var(--secondary-text);
+            font-size: 1.1rem;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .socials a {
+            color: var(--text-color);
+            transition: var(--transition);
+        }
+
+        .socials a:hover {
+            color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        #theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--text-color);
+            padding: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 0 30px;
+            font-size: 0.85rem;
+            color: var(--secondary-text);
+        }
+
+        .heart { color: var(--accent-color); }
+
+        @media (max-width: 600px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Rest of the file content unchanged -->
+
+<header>
+    <div class="container">
+        <nav>
+            <a href="#" class="nav-brand">raflywithme</a>
+            <div class="nav-links">
+                <a href="https://raflywithme.my.id/"><i data-feather="home"></i> Beranda</a>
+                <a href="https://raflywithme.my.id/about/"><i data-feather="user"></i> Tentang</a>
+                <a href="https://github.com/raflywithme"><i data-feather="github"></i></a>
+                <button id="theme-toggle" onclick="toggleTheme()">
+                    <i id="theme-icon" data-feather="moon"></i>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <div class="avatar-container">
+            <img src="https://raflywithme.my.id/images/avatar.png" alt="Muhammad Rafli">
+        </div>
+        <h1>Muhammad Rafli</h1>
+        <h3>Backend Developer & Software Engineering Student</h3>
+        <p style="color: var(--secondary-text); margin-top: 15px; font-size: 0.9rem;">
+            Politeknik Negeri Medan • Medan, Indonesia
+        </p>
+
+        <div class="socials">
+            <a href="https://github.com/raflywithme" target="_blank"><i data-feather="github"></i></a>
+            <a href="https://www.linkedin.com/in/rexdzx" target="_blank"><i data-feather="linkedin"></i></a>
+            <a href="https://www.facebook.com/rexdzx" target="_blank"><i data-feather="facebook"></i></a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Muhammad Rafli</p>
+    </div>
+</footer>
+
+<script>
+    feather.replace();
+
+    function toggleTheme() {
+        const body = document.body;
+        const icon = document.getElementById('theme-icon');
+        
+        if (body.getAttribute('data-theme') === 'dark') {
+            body.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
+            icon.setAttribute('data-feather', 'moon');
+        } else {
+            body.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            icon.setAttribute('data-feather', 'sun');
+        }
+        feather.replace();
+    }
+
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.setAttribute('data-theme', 'dark');
+        document.getElementById('theme-icon').setAttribute('data-feather', 'sun');
+        feather.replace();
+    }
+</script>
+
 </body>
 </html>
