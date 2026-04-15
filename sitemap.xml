@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rexdzx.github.io/about/</loc>
+    <loc>https://raflywithme.my.id/</loc>
+  </url>
+
+  <url>
+    <loc>https://raflywithme.my.id/about/</loc>
     <lastmod>2022-10-20T21:25:33+07:00</lastmod>
-  </url><url>
-    <loc>https://rexdzx.github.io/categories/</loc>
-  </url><url>
-    <loc>https://rexdzx.github.io/</loc>
-  </url><url>
-    <loc>https://rexdzx.github.io/tags/</loc>
   </url>
 </urlset>
